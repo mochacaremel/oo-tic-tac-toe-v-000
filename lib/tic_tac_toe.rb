@@ -65,7 +65,7 @@
 	                    
 	 
 	  puts "Please choose a square:"
-	  user_choice = gets.chomp.downcase
+	  user_choice = STDIN.gets.chomp.downcase
 	  user_choice_hash.each do |choice, square|
 	    if user_choice == choice 
 	      if check_validity(square)
